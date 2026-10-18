@@ -1,8 +1,37 @@
 {
-  "offline_check": "PASS: 7 Python files parsed; archived CSV headers valid. Data-driven reproducibility NOT tested.",
-  "original_dataset_available": false,
-  "full_data_driven_reproduction": "NOT VERIFIED",
+  "offline_check": "PASS: 7 Python files parsed; archived CSV headers valid (observed local Windows run).",
+  "original_dataset_in_repository": false,
+  "original_dataset_used_for_local_rerun": true,
+  "local_python_version": "3.13.16",
+  "dependency_check": "PASS: pip check and key scientific-package imports",
+  "prediction_accuracy_script": "PASS: observed local completion; DONE 27004 records",
+  "uncertainty_calibration_script": "PASS: observed local completion; records 20200 done",
+  "headline_results_match_manuscript_at_displayed_precision": true,
+  "headline_position_rmse_mm": {
+    "h100": {
+      "command_only": 4.562,
+      "causal_filter": 3.009
+    },
+    "h250": {
+      "command_only": 8.619,
+      "causal_filter": 7.707
+    },
+    "h500": {
+      "command_only": 25.238,
+      "causal_filter": 24.825
+    }
+  },
+  "headline_pooled_90_percent_position_coverage_percent": {
+    "h100": 85.6,
+    "h250": 83.4,
+    "h500": 87.3
+  },
+  "separate_verifier": "NOT COMPLETED: verify_stage18.py uses a hard-coded /mnt/data path",
+  "independent_clean_environment_reproduction": "NOT VERIFIED",
+  "comprehensive_regenerated_csv_comparison": "NOT VERIFIED",
   "original_source_scripts_unchanged": true,
   "python_files": 7,
-  "archived_reference_csvs": 10
+  "archived_reference_csvs": 10,
+  "verification_date": "2026-10-18",
+  "evidence_basis": "Screenshots supplied by the user showing Windows command-line output"
 }

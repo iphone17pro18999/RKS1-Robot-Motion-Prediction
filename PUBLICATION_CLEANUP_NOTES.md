@@ -1,9 +1,5 @@
-# Publication-facing cleanup notes
+# Publication-facing terminology audit
 
-The scientific wording in README.md has been revised to replace internal stage-centric narrative.
+Use **chronological prediction-accuracy evaluation** in public text for the legacy `stage18` analysis, and **prediction-uncertainty calibration** for the legacy `stage19` analysis. The source code and original output names are preserved byte-for-byte to avoid breaking dependencies. Do not label plots, captions or paper tables with these internal stage numbers.
 
-Do NOT mass-rename the internal Python source filenames, protocol JSON files, result CSVs, or folder names without updating their file-path dependencies and rerunning the analyses. Their original names are kept deliberately for provenance.
-
-Future verified refactoring could rename `stage18` to `prediction_accuracy` and `stage19` to `uncertainty_calibration`, while adjusting every dependent script and comparing all regenerated output files.
-
-Remove any internal-stage terms from the journal manuscript and any public descriptions; retain the original raw outputs as an auditable artifact.
+The repository source does **not** include the original DaRUS source-data ZIP. Syntax and archived-file integrity checks do not imply a full data-driven rerun. Rerun the supplied scripts and compare numerical values to the manuscript before releasing publicly.

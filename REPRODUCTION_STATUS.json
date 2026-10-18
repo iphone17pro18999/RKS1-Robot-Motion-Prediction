@@ -1,0 +1,8 @@
+{
+  "offline_check": "PASS: 7 Python files parsed; archived CSV headers valid. Data-driven reproducibility NOT tested.",
+  "original_dataset_available": false,
+  "full_data_driven_reproduction": "NOT VERIFIED",
+  "original_source_scripts_unchanged": true,
+  "python_files": 7,
+  "archived_reference_csvs": 10
+}
